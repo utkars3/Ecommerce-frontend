@@ -110,10 +110,12 @@ const HomePage = () => {
     <Layout title={"ALl Products - Best offers "}>
       {/* banner image */}
       <img
-        src="/images/banner.png"
+        // src="/images/banner.png"
+        src="/images/image.jpeg"
         className="banner-img"
         alt="bannerimage"
         width={"100%"}
+        height={"10%"}
       />
       {/* banner image */}
       <div className="container-fluid row mt-3 home-page">
@@ -125,7 +127,7 @@ const HomePage = () => {
                 key={c._id}
                 onChange={(e) => handleFilter(e.target.checked, c._id)}
               >
-                {c.name}
+              {c.name}
               </Checkbox>
             ))}
           </div>
